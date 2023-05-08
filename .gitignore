@@ -1,0 +1,17 @@
+# Directories
+out/**
+Packages/**
+Packages/**
+asphalt/**
+
+# Files
+sourcemap.json
+wally.lock
+package-lock.json
+wally.toml
+globalTypes.d.lua
+
+# File types
+*.gitconfig
+*.rbxl
+*.rbxlx

@@ -1,0 +1,10 @@
+{
+	"luau-lsp.sourcemap.rojoProjectFile": "default.project.json",
+	"explorer/context": [
+		{
+			"command": "workbench.action.tasks.runTask",
+			"when": "resourceFilename =~ /\\.sh$/",
+			"group": "navigation"
+		}
+	]
+}

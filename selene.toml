@@ -1,0 +1,15 @@
+std = "roblox"
+exclude = [
+	"out/*", 
+	"*.spec.lua", 
+	"*.remodel.lua", 
+	"*.rbxmk.lua",
+	"*.d.lua",
+	"*.story.lua",
+	"*.story.luau",
+	"gamework/*", 
+	"scripts/*", 
+]
+[lints]
+unused_variable = "allow"
+shadowing = "deny"

@@ -1,0 +1,53 @@
+[[boot_order]]
+modules = [
+	"Lobby",
+	"Infrastructure",
+	"City",
+	"Player",
+	"Company",
+	"Map",
+	"Drone",
+	"Vehicle",
+	"Statistics",
+]
+is_shared = false
+domain_path = "game/ServerScriptService/Server"
+build_path = "out/Server/Boot.server.luau"
+
+[[boot_order]]
+modules = [
+	"Onboarding",
+	"Build",
+	"Company",
+	"Financing",
+	"Shop",
+	"Vehicle",
+	"Ocean",
+	"Weather",
+]
+is_shared = false
+domain_path = "game/ReplicatedStorage/Client"
+build_path = "out/Client/Boot.client.luau"
+
+[[boot_order]]
+modules = [
+	"TitleSequence",
+]
+is_shared = false
+domain_path = "game/ReplicatedFirst/First"
+build_path = "out/First/Boot.client.luau"
+
+[[boot_order]]
+modules = [
+	"Onboarding",
+	"Build",
+	"Company",
+	"Financing",
+	"Shop",
+	"Vehicle",
+	"Ocean",
+	"Weather",
+]
+is_shared = false
+domain_path = "game/ReplicatedStorage/Client"
+build_path = "out/Client/Boot.client.luau"

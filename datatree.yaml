@@ -1,0 +1,18 @@
+build:
+  out:
+    client_path: out/Client/DataTree.luau
+    server_path: out/Server/DataTreeService.luau
+    shared_path: out/Shared/DataTreeTypes.luau
+  shared_types_roblox_path: game/ReplicatedStorage/Shared/DataTreeTypes
+metadata: {}
+types: {}
+tree:
+  Camera:
+    Pan: 0
+    Position::Vector3Integer:
+      X: 0
+      Y: 0
+      Z: 0
+    Tilt: 0
+  IsTutorialComplete: false
+  Money::int: 10000000

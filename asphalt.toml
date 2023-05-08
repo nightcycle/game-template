@@ -1,0 +1,57 @@
+[build]
+dir_path = "asphalt/ReplicatedStorage"
+module_path = "out/Shared/Asphalt.luau"
+efficient_build_includes_all_local_files = true
+asset_usage_audit_script_directories = ["src"]
+importable_lock_files = [
+	"C://Users/coyer/media/asphalt.lock"
+]
+
+[build.publish]
+publish_to_group = true
+entity_id = 4181328
+
+[media.audio]
+dir_path = "asphalt/SoundService"
+compression_directory_instance = "SoundGroup"
+sources = [
+	"asset/audio",
+	"C://Users/coyer/media/src/audio"
+]
+
+[media.image]
+sources = [
+	"asset/image",
+	"C://Users/coyer/media/src/image"
+]
+
+[media.material]
+dir_path = "asphalt/MaterialService"
+sources = [
+	"asset/material",
+	"C://Users/coyer/media/src/material"
+]
+
+[media.mesh]
+sources = [
+	"asset/mesh",
+	"C://Users/coyer/media/src/mesh"
+]
+
+[media.model]
+sources = [
+	"asset/model",
+	"C://Users/coyer/media/src/model"
+]
+
+[media.particle]
+sources = [
+	"asset/particle",
+	"C://Users/coyer/media/src/particle"
+]
+
+[media.animation]
+sources = [
+	"asset/animation",
+	"C://Users/coyer/media/src/animation"
+]

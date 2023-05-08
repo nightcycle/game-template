@@ -1,0 +1,97 @@
+{
+    "name": "Infrastruct",
+    "globIgnorePaths": [
+        "**/package.json",
+        "**/tsconfig.json"
+    ],
+    "tree": {
+        "$className": "DataModel",
+        "ReplicatedFirst": {
+            "$className": "ReplicatedFirst",
+            "First": {
+                "$className": "Folder",
+                "$path": "src/First",
+			 "Boot": {
+				"$path": "out/First/Boot"
+			 }
+            }
+        },
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+            "Packages": {
+                "$className": "Folder",
+                "$path": "Packages"
+            },
+		  "Asphalt": {
+			"$className": "Folder",
+			"$path": "asphalt/ReplicatedStorage"
+		 },
+            "Shared": {
+                "$className": "Folder",
+                "$path": "src/Shared",
+			 "Asphalt": {
+				"$path": "out/Shared/Asphalt"
+			 },
+			 "MidasTree": {
+				"$path": "out/Shared/MidasTree"
+			 },
+			 "Balancing": {
+				"$path": "out/Shared/Balancing"
+			 },
+			 "DataTreeTypes": {
+				"$path": "out/Shared/DataTreeTypes.luau"
+			 }, 
+			 "PseudoEnum": {
+				"$path": "out/Shared/PseudoEnum.luau"
+			 }, 
+			 "Scene": {
+				"$path": "out/Shared/Scene.luau"
+			 }
+            },
+            "Client": {
+                "$className": "Folder",
+                "$path": "src/Client",
+			 "StyleGuide": {
+				"$path": "out/Client/StyleGuide"
+			 },
+			 "Analytics": {
+				"$path": "out/Client/Analytics"
+			 },
+			 "Boot": {
+				"$path": "out/Client/Boot"
+			 },
+			 "DataTree": {
+				"$path": "out/Client/DataTree"
+			 }
+            }
+        },
+	   "MaterialService": {
+		"$className": "MaterialService",
+		"Material": {
+			"$path": "asphalt/MaterialService"
+		 }
+	   },
+	   "SoundService": {
+		"$className": "SoundService",
+		"Audio": {
+			"$path": "asphalt/SoundService.rbxm"
+		 }
+	   },
+        "ServerScriptService": {
+            "$className": "ServerScriptService",
+            "Server": {
+                "$className": "Folder",
+                "$path": "src/Server",
+			 "Analytics": {
+				"$path": "out/Server/Analytics"
+			 },
+			 "Boot": {
+				"$path": "out/Server/Boot"
+			 },
+			 "DataTreeService": {
+				"$path": "out/Server/DataTreeService"
+			 }
+            }
+        }
+    }
+}
