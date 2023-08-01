@@ -1,5 +1,8 @@
 # Directories
-out/**
+out/Client/**
+out/Shared/**
+out/Server/**
+out/First/**
 Packages/**
 asphalt/**
 bin

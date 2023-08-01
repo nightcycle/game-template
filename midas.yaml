@@ -10,7 +10,7 @@ monetization:
 template:
   Event:
     Character:
-      Died: true
+      Died: false
     Chat:
       Spoke: false
     Exit:
@@ -36,14 +36,14 @@ template:
       JumpPower: false
       Mass: false
       MaxHealth: false
-      Position: true
+      Position: false
       State: false
       WalkSpeed: false
     Chat:
-      Count: true
+      Count: false
       LastMessage: false
     Demographics:
-      AccountAge: true
+      AccountAge: false
       Platform:
         Accelerometer: false
         Gamepad: false
@@ -54,66 +54,66 @@ template:
         ScreenSize: false
         Touch: false
         VR: false
-      RobloxLanguage: true
+      RobloxLanguage: false
       SystemLanguage: false
       UserSettings:
         Fullscreen: false
         GamepadCameraSensitivity: false
         MouseSensitivity: false
-        SavedQualityLevel: true
+        SavedQualityLevel: false
     Groups:
       Nightcycle: 4181328
     Performance:
       Client:
-        FPS: true
-        Ping: true
+        FPS: false
+        Ping: false
       Server:
-        EventsPerMinute: true
-        HeartRate: true
-        Instances: true
+        EventsPerMinute: false
+        HeartRate: false
+        Instances: false
         Memory:
           Animations: false
-          CSG: true
+          CSG: false
           CharacterTextures: false
           Guis: false
-          HttpCache: true
+          HttpCache: false
           Instances: false
           Internal: false
-          LuaHeap: true
+          LuaHeap: false
           MeshPart: false
           Part: false
           Particle: false
           Pathfinding: false
           PhysicsCollision: false
-          PhysicsParts: true
-          Script: true
+          PhysicsParts: false
+          Script: false
           Signals: false
           SoundsData: false
           SoundsStreaming: false
-          SpatialHash: true
+          SpatialHash: false
           TerrainGraphics: false
-          TerrainVoxels: true
+          TerrainVoxels: false
           Textures: false
-        MovingParts: true
+        MovingParts: false
         Network:
           Data:
-            Receive: true
-            Send: true
+            Receive: false
+            Send: false
           Physics:
-            Receive: true
-            Send: true
-        Ping: true
-        ServerTime: true
+            Receive: false
+            Send: false
+        Ping: false
+        ServerTime: false
     Population:
-      Friends: true
+      Friends: false
       PeakFriends: false
       SpeakingDistance: false
       Team: false
-      Total: true
+      Total: false
     Spending:
-      Gamepass: true
-      Product: true
-      Total: true
+      Gamepass: false
+      Product: false
+      Total: false
 tree:
   Duration: integer
   Id:
@@ -124,12 +124,6 @@ tree:
     Event: integer
     Total: integer
   IsStudio: boolean
-  Role:
-  - Leviathan
-  - Survivor
-  - Lobby
-  - Builder
-  - Spectator
   Version:
     Build: integer
     Major: integer
