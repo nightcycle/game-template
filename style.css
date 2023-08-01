@@ -124,19 +124,19 @@
 }
 
 .primary {
-	background-color: rgb(43, 123, 255);
+	background-color: #6e99ca;
 }
 
 .secondary {
-	background-color: rgb(255, 211, 152);
+	background-color: #efb838;
 }
 
 .tertiary {
-	background-color: #00cbfc;
+	background-color: #a75e9b;
 }
 
 .background {
-	background-color:rgb(197, 220, 255);
+	background-color:#998e8c;
 }
 
 .error {

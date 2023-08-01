@@ -1,7 +1,8 @@
-std = "roblox"
+std = "lints/roblox"
 exclude = [
 	"out/*", 
-	"*.spec.lua", 
+	"*.spec.lua",
+	"*.spec.luau",  
 	"*.remodel.lua", 
 	"*.rbxmk.lua",
 	"*.d.lua",
@@ -12,4 +13,5 @@ exclude = [
 ]
 [lints]
 unused_variable = "allow"
-shadowing = "deny"
+empty_if = "allow"
+if_same_then_else = "allow"

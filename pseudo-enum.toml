@@ -1,6 +1,7 @@
 build_path = "out/Shared/PseudoEnum.luau"
 use_union_types_for_tree = false
-use_union_types_for_export = false
+use_union_types_for_export = true
+
 [enums]
 ContrastStandardType = [ "Default", "LargeText", "Incidental", "Logotype",]
 GuiAlignmentType = [ "Center", "Left", "Right", "Top", "Bottom", "TopLeft", "TopRight", "BottomLeft", "BottomRight",]
@@ -9,3 +10,11 @@ GuiDensityModifier = [ "Default", "High", "Low",]
 GuiThemeType = [ "Dark", "Light",]
 GuiTypography = [ "Overline", "Caption", "Body2", "Body1", "Subtitle2", "Subtitle1", "Button", "Headline6", "Headline5", "Headline4", "Headline3", "Headline2", "Headline1",]
 GuiCategoryType = [ "Background", "Panel", "Card", "Frame", "Item", "Button", "Label", "Bar", "Toggle",]
+HUDStateType = [ "Default", "Leviathan", "Dead", "Spectate", "Build", "Raffle", "VehicleSelection", "Drive", "Turret",]
+DamageType = [ "Bullet", "Flame", "Explosive", "Laser", "Harpoon",]
+ToolEffectState = [ "Default", "Equip", "Unequip", "Activate",]
+PlayerRoundState = [ "Lobby", "Survivor", "Leviathan", "Building", "Spectating",]
+RoundState = [ "Intermission", "Raffle", "Loading", "Playing", "Finishing", "Cleaning",]
+RoundConclusion = [ "Complete", "Timeout", "Error", "Skip", "Restart",]
+BuildActionType = [ "None", "Draw", "Move", "Rotate", "Texture", "TexturePick", "Delete", "ConfigureVehicle", "ManageVehicle",]
+BuildFocusType = [ "Vertex", "Rod", "Surface", "Prop",]

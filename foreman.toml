@@ -1,16 +1,17 @@
 [tools]
 wally = 	{source = "UpliftGames/wally", 		version = "0.3.1" }
-stylua = {source = "JohnnyMorganz/StyLua", version = "0.15.3"}
 wally-package-types = {source = "JohnnyMorganz/wally-package-types", version = "1.2.0"}
 selene = {source = "kampfkarren/selene", version = "0.25.0"}
-spreadsheet-to-luau = {source = "nightcycle/spreadsheet-to-luau", version = "1.0.2"}
-style-guide = {source = "nightcycle/style-guide", version = "0.1.14"}
-midas = {source = "nightcycle/midas-clt", version = "1.0.5"}
-datatree = {source = "nightcycle/datatree", version = "0.1.3"}
-pseudo-enum = {source = "nightcycle/pseudo-enum", version = "0.2.1"}
+rojo = {source = "rojo-rbx/rojo", 	version = "7.3.0" }
+luau-lsp = {source="JohnnyMorganz/luau-lsp", version="1.22.1"}
+run-in-roblox = { source = "rojo-rbx/run-in-roblox", version = "0.3.0" }
+spreadsheet-to-luau = {source = "nightcycle/spreadsheet-to-luau", version = "1.1.1"}
+stylua = {source = "JohnnyMorganz/StyLua", version = "0.18.0"}
 wally-update = {source = "nightcycle/wally-update", version = "0.1.2"}
-scene = {source = "nightcycle/scene-clt", version = "0.1.3"}
-asphalt = {source = "nightcycle/asphalt", version = "0.2.4"}
-boot = {source = "nightcycle/boot-clt", version = "1.0.3"}
-# rojo = 	{source = "rojo-rbx/rojo", 	version = "7.2.1" }
-luau-lsp = {source="JohnnyMorganz/luau-lsp", version="1.19.2"}
+style-guide = {source = "nightcycle/style-guide", version = "0.2.0"}
+midas = {source = "nightcycle/midas-clt", version = "3.0.0"}
+datatree = {source = "nightcycle/datatree", version = "3.1.0"}
+pseudo-enum = {source = "nightcycle/pseudo-enum", version = "0.2.2"}
+scene = {source = "nightcycle/scene-clt", version = "0.1.7"}
+asphalt = {source = "nightcycle/asphalt", version = "1.0.2"}
+boot = {source = "nightcycle/boot-clt", version = "1.0.4"}

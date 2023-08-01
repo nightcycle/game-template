@@ -2,13 +2,27 @@
 out/**
 Packages/**
 asphalt/**
+bin
+tests
+types
+lints
+analytics/auth.txt
+analytics/output/*.json
+analytics/output/kpi/*.json
+analytics/data.json
+.asphalt-libraries
+save
 
 # Files
 sourcemap.json
 wally.lock
 package-lock.json
+keys.txt
+scripts/workflow/release-to-live-game.sh
 
 # File types
 *.gitconfig
 *.rbxl
 *.rbxlx
+*.rbxl.lock
+*.env

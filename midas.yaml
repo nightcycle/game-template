@@ -1,23 +1,120 @@
 build:
-  client_boot_script_path: out/Client/Analytics.client.luau
-  midas_py_module_out_path: src/data/download
-  server_boot_script_path: out/Server/Analytics.server.luau
-  shared_state_tree_path: out/Shared/MidasTree.luau
-encoding_marker: '~'
-playfab:
-  download_start_date: '1970-1-01 00:00:00.000000'
-  download_window: 30
-  user_limit: 10000000
-products:
-  developer_products: {}
+  client_boot_script_path: out/Client/Analytics.luau
+  midas_package_rbx_path: game/ReplicatedStorage/Packages/Midas
+  server_boot_script_path: out/Server/Analytics.luau
+  shared_event_tree_path: out/Shared/MidasEventTree.luau
+  shared_state_tree_path: out/Shared/MidasStateTree.luau
+monetization:
   gamepasses: {}
-recorder:
-  id:
-    group_id: 67890
-    place_id: 12345
-  interval: 60
-  out_path: src/data/record
-state_tree:
+  products: {}
+template:
+  Event:
+    Character:
+      Died: true
+    Chat:
+      Spoke: false
+    Exit:
+      Close: false
+      Disconnect: false
+      Quit: false
+    Interval: 15
+    Join:
+      Enter: false
+      Teleport: false
+    Spending:
+      Purchase:
+        Gamepass: false
+        Product: false
+  State:
+    Badges: {}
+    Character:
+      Altitude: false
+      Deaths: false
+      Health: false
+      Height: false
+      IsDead: false
+      JumpPower: false
+      Mass: false
+      MaxHealth: false
+      Position: true
+      State: false
+      WalkSpeed: false
+    Chat:
+      Count: true
+      LastMessage: false
+    Demographics:
+      AccountAge: true
+      Platform:
+        Accelerometer: false
+        Gamepad: false
+        Gyroscope: false
+        Keyboard: false
+        Mouse: false
+        ScreenRatio: false
+        ScreenSize: false
+        Touch: false
+        VR: false
+      RobloxLanguage: true
+      SystemLanguage: false
+      UserSettings:
+        Fullscreen: false
+        GamepadCameraSensitivity: false
+        MouseSensitivity: false
+        SavedQualityLevel: true
+    Groups:
+      Nightcycle: 4181328
+    Performance:
+      Client:
+        FPS: true
+        Ping: true
+      Server:
+        EventsPerMinute: true
+        HeartRate: true
+        Instances: true
+        Memory:
+          Animations: false
+          CSG: true
+          CharacterTextures: false
+          Guis: false
+          HttpCache: true
+          Instances: false
+          Internal: false
+          LuaHeap: true
+          MeshPart: false
+          Part: false
+          Particle: false
+          Pathfinding: false
+          PhysicsCollision: false
+          PhysicsParts: true
+          Script: true
+          Signals: false
+          SoundsData: false
+          SoundsStreaming: false
+          SpatialHash: true
+          TerrainGraphics: false
+          TerrainVoxels: true
+          Textures: false
+        MovingParts: true
+        Network:
+          Data:
+            Receive: true
+            Send: true
+          Physics:
+            Receive: true
+            Send: true
+        Ping: true
+        ServerTime: true
+    Population:
+      Friends: true
+      PeakFriends: false
+      SpeakingDistance: false
+      Team: false
+      Total: true
+    Spending:
+      Gamepass: true
+      Product: true
+      Total: true
+tree:
   Duration: integer
   Id:
     Place: string
@@ -27,27 +124,18 @@ state_tree:
     Event: integer
     Total: integer
   IsStudio: boolean
+  Role:
+  - Leviathan
+  - Survivor
+  - Lobby
+  - Builder
+  - Spectator
   Version:
     Build: integer
     Major: integer
     Minor: integer
     Patch: integer
-templates:
-  character: false
-  chat: false
-  client_performance: false
-  demographics: false
-  exit: false
-  group: {
-    "Nightcycle": 4181328,
-  }
-  join: false
-  market: false
-  player: false
-  population: false
-  server_performance: false
 version:
-  hotfix: 0
-  major: 1
+  major: 0
   minor: 1
-  patch: 5
+  patch: 0

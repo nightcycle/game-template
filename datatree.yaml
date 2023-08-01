@@ -1,18 +1,55 @@
+domain_name: gamedata
 build:
   out:
     client_path: out/Client/DataTree.luau
     server_path: out/Server/DataTreeService.luau
     shared_path: out/Shared/DataTreeTypes.luau
   shared_types_roblox_path: game/ReplicatedStorage/Shared/DataTreeTypes
-metadata: {}
-types: {}
+metadata:
+  major: 0
+  minor: 0
+  patch: 0
+types:
+  StoredAppearanceData:
+    C: int
+    M: int
+  StoredVertexData:
+    POS: Vector3Double
+    HP: int?
+  StoredRodData:
+    APP: int
+    DIA: double
+    VID:
+      A: int
+      B: int
+  StoredSurfaceData:
+    THI: double
+    APP: int
+    ROD: Dict[int, int]
+  StoredPropData:
+    BID: int
+    CUS: Dict[int, int]
+    CF: CFrameDouble
+    VID: Dict[int, int]
+    HR: int?
+    HS: int?
+    HP: int?
+  StoredVehicleData:
+    NAM: string
+    BAL: Dict[int, string]
+    CUS:
+      COL: Dict[int, Color3]
+      MAT: Dict[int, string]
+      KEY: Dict[int, string]
+      APP: Dict[int, StoredAppearanceData]
+    GEO:
+      V: Dict[int, StoredVertexData]
+      R: Dict[int, StoredRodData]
+      S: Dict[int, StoredSurfaceData]
+      P: Dict[int, StoredPropData]
+  WeaponType:
+    - "Pistol"
 tree:
-  Camera:
-    Pan: 0
-    Position::Vector3Integer:
-      X: 0
-      Y: 0
-      Z: 0
-    Tilt: 0
-  IsTutorialComplete: false
-  Money::int: 10000000
+  Gold::int: 1000
+  Vehicles::Dict[string, StoredVehicleData]: {}
+  Weapons::Dict[WeaponType, boolean]: {}
