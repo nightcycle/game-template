@@ -7,12 +7,10 @@ from ropublisher import Publisher
 from tempfile import TemporaryDirectory
 from requests import Session
 
-GROUP_ID = 4181328
-UNIVERSE_ID = 4659672329
+GROUP_ID = 32853607
+UNIVERSE_ID = 4947129281
 REPO_OWNER = "nightcycle"
-REPO_NAME = "wasteland-engineer"
-API_KEY_ID = "35b8179d-889f-4e6b-a4c2-73940408dddc"
-API_KEY_NAME = "Wasteland Engineer Publish"
+REPO_NAME = "repo-name-here"
 
 def get_public_ip():
     try:
@@ -105,43 +103,6 @@ with TemporaryDirectory() as temp_dir_path:
 					with open(temp_dir_path+"/"+build_file_name, "wb") as out_file:
 						out_file.write(content)
 			break
-	# # update ip address
-	# print("updating ip address whitelist")
-	# session = requests.Session()
-	# session.cookies.update({
-	# 	".ROBLOSECURITY": roblox_cookie
-	# })
-	# session.headers.update({
-	# 	"X-Csrf-Token": get_xcrf_token(session),
-	# 	"Content-Type": "application/json",
-	# 	"Accept-Encoding": "gzip, deflate, br",
-	# 	"Accept": "*/*",
-	# })
-
-	# ip_address = get_public_ip()
-	# assert ip_address != None
-	# print("IP", ip_address)
-	# response = session.patch(
-	# 	url="https://apis.roblox.com/cloud-authentication/v1/apiKey",
-	# 	data=json.dumps({
-	# 		"cloudAuthId":API_KEY_ID,
-	# 		"cloudAuthUserConfiguredProperties":{
-	# 			"name":API_KEY_NAME,
-	# 			"description":"",
-	# 			"isEnabled":True,
-	# 			"allowedCidrs":[ip_address],
-	# 			"scopes":[
-	# 				{
-	# 					"scopeType":"universe-places",
-	# 					"targetParts":[str(UNIVERSE_ID)],
-	# 					"operations":["write"]
-	# 				}
-	# 			]
-	# 		}
-	# 	})
-	# )
-	# print("ip update response", response.status_code, response.reason)
-	# assert response.status_code == 200
 
 	publisher = Publisher(
 		place_key=api_key,
